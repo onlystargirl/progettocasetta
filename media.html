@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Media - Student Web Project</title>
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap" rel="stylesheet">
+<style>
+/* STILE SPECIFICO MEDIA PAGE */
+.video-main {
+  width: 100%;
+  max-width: 900px;
+  height: 500px;
+  margin: 40px auto 20px;
+  display: block;
+  border: 3px solid #b30000;
+  border-radius: 10px;
+}
+
+.media-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  margin: 30px 10%;
+}
+
+.media-grid img,
+.media-grid video {
+  width: 100%;
+  border-radius: 10px;
+  border: 2px solid #7a0000;
+  transition: transform 0.3s, border-color 0.3s;
+}
+
+.media-grid img:hover,
+.media-grid video:hover {
+  transform: scale(1.05);
+  border-color: #ff1a1a;
+}
+</style>
+</head>
+<body>
+
+<header class="navbar">
+<div class="logo">Student Web Project</div>
+<nav class="nav-links">
+<a href="index.html">Home</a>
+<a href="progetto.html">Progetto</a>
+<a href="codice.html">Codice</a>
+<a href="media.html">Media</a>
+</nav>
+</header>
+
+<section class="hero">
+<h1>Media del Progetto</h1>
+<p>Video e immagini dimostrative della casa di Vecna e delle luci</p>
+</section>
+
+<section class="section">
+<h2>Video Principale</h2>
+<video class="video-main" controls>
+  <source src="video/video-principale.mp4" type="video/mp4">
+  Il tuo browser non supporta il tag video.
+</video>
+</section>
+
+<section class="section">
+<h2>Galleria Foto e Video</h2>
+<div class="media-grid">
+  <img src="https://picsum.photos/400/300?1" alt="Mockup 1">
+  <img src="https://picsum.photos/400/300?2" alt="Mockup 2">
+  <img src="https://picsum.photos/400/300?3" alt="Mockup 3">
+  <video controls>
+    <source src="video/video1.mp4" type="video/mp4">
+    Il tuo browser non supporta il tag video.
+  </video>
+  <video controls>
+    <source src="video/video2.mp4" type="video/mp4">
+    Il tuo browser non supporta il tag video.
+  </video>
+  <img src="https://picsum.photos/400/300?4" alt="Mockup 4">
+</div>
+</section>
+
+<footer>
+<p>© 2026 – Student Web Project</p>
+</footer>
+
+</body>
+</html>
